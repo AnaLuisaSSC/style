@@ -1,0 +1,122 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+  }
+  
+  #image {
+        position: absolute;
+        text-align: center;
+        filter: brightness(.8);
+        /*deixa a imagem mais escura*/
+    }
+
+
+    #texto {
+        position:static;
+        font-size: 320px;
+        left: 6px;
+        top: 0px;
+        /*o menu desce e sobe*/
+        right: 0px;
+    }
+
+ 
+    .menu {
+        position: relative;
+       
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20%;
+        height: 85px;
+        width: 100%; /* Preenche a largura total da tela */
+        z-index: 1000; 
+        margin-right: 0px;
+        
+    }
+
+.menu ul, .menu li {
+    margin: 1;
+    padding:var();
+    
+}
+.menu ul {
+    background:0; /*cor do menu*/
+    list-style:none; /*modifica posição, se vai ter numero*/
+    width: 60%;  /* quanto o menu faz parte da linha */
+    
+    float: left;
+    
+}
+.menu li {
+    float:left;
+    position:relative; /*posição do submenu*/
+    width: 150px; /* separa as palavras do menu */
+}
+.menu a {
+    background: 0;
+    top: 0px;
+    color: rgb(0, 0, 0);
+    display: block;
+    font: bold 19px/27px sans-serif;
+    padding: 19px 30px;
+    font-size: 18px; /*tamanho da letra do menu*/
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+    float:left; /*o menu vai pra esqueda, direita,...*/
+    
+}
+.menu li:hover a {
+    background: #ebe8e865;
+}
+.menu a:hover{
+    background: #fafafaad;
+    background: rgb(28, 55, 145);
+}
+
+.produtos{
+    margin-left: 35px;
+    margin-right: 35px;
+    background: rgb(248, 248, 246);
+}
+.imagem2{
+    width: 550px;
+    margin-left: 470px;
+    margin-right: 450px;
+    
+}
+.descriçao1{
+    margin-left: 520px;
+    margin-right: 440px;
+}
+.descriçao2{
+    margin-left: 490px;
+    margin-right: 440px;
+}
+.descriçao3{
+    margin-left: 575px;
+    margin-right: 440px;
+}
+.descriçao4{
+    margin-left: 575px;
+    margin-right: 400px;
+}
+
+.titulo{
+    margin-left: 580px;
+}
+.test{
+    float: unset;
+    margin-left: 260px;
+    color: rgb(88, 153, 197);
+    font-size: 20px;
+}

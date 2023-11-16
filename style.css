@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+  }
+  
+  #image {
+        position: absolute;
+        text-align: center;
+        filter: brightness(.8);
+        /*deixa a imagem mais escura*/
+    }
+
+
+    #texto {
+        position:static;
+        font-size: 320px;
+        left: 6px;
+        top: 0px;
+        /*o menu desce e sobe*/
+        right: 0px;
+    }
+
+    .menu {
+        position: relative;
+       
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20%;
+        height: 85px;
+        width: 100%; /* Preenche a largura total da tela */
+        z-index: 1000; 
+    }
+
+.menu ul, .menu li {
+    margin: 1;
+    padding:var();
+    
+}
+.menu ul {
+    background:0; /*cor do menu*/
+    list-style:none; /*modifica posição, se vai ter numero*/
+    width: 60%;  /* quanto o menu faz parte da linha */
+    
+    float: left;
+    
+}
+.menu li {
+    float:left;
+    position:relative; /*posição do submenu*/
+    width: 150px; /* separa as palavras do menu */
+}
+.menu a {
+    background: 0;
+    color: rgb(255, 255, 255);
+    display: block;
+    font: bold 19px/27px sans-serif;
+    padding: 19px 30px;
+    font-size: 17px; /*tamanho da letra do menu*/
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+    float:right; /*o menu vai pra esqueda, direita,...*/
+}
+.menu li:hover a {
+    background: #fafafaad;
+}
+.menu a:hover{
+    background: #fafafaad;
+    background: rgb(28, 55, 145);
+}
+
+.texto{
+    margin: 140px;
+    text-align: justify;
+    font-size: 20px;
+}
+h1{
+    color: rgb(0, 0, 0);
+}
+.ltexto{
+    display: block;
+    height: 200px;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+  }
+p{
+    color:rgb(0, 0, 0)
+}
+
+
+
